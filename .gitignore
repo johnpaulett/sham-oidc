@@ -1,0 +1,9 @@
+*.pyc
+
+
+*\~
+*\#*
+
+
+# Do not store docker-compose's environment variables
+/.env

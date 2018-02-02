@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <p>
+        A simple, <b>unsecure</b> OpenID Connect (OIDC) Provider, useful for locally
+        testing another application that is an OpenID Connect Relying Party.
+      </p>
+      <p>
+        Utilizes <a href="https://django-oidc-provider.readthedocs.io">django-oidc-provider</a>,
+        providing a simply containerized wrapper with the minimal set of
+        templates and configuration to quickly get started.
+      </p>
+
+      <div class="alert alert-danger" role="alert">
+        sham-oidc is <b>not</b> intended for production or public usage.
+      </div>
+
+      <p>
+        Start by creating a Client in the <a href="/admin/">Admin</a>.
+      </p>
+      <a class="btn btn-primary" href="/admin/">Admin</a>
+      <a class="btn btn-info" href="{% url "oidc_provider:provider-info" %}">
+        .well-known OpenID config
+      </a>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <a class="btn btn-primary" href="/">Home</a>
+      <a class="btn btn-primary" href="{% url "login" %}">Login</a>
+    </div>
+  </div>
+{% endblock %}

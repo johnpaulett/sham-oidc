@@ -1,0 +1,16 @@
+version: '3'
+services:
+  oidc:
+    build: .
+    ports:
+    - "4000:8000"
+    volumes:
+      - .:/app
+      - oidc-db:/data
+    environment:
+      # Set the SECRET_KEY enviroment variable on your host
+      - SECRET_KEY=${SECRET_KEY}
+      - DEBUG=${DEBUG:-false}
+
+volumes:
+  oidc-db:
