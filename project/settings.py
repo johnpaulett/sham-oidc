@@ -87,6 +87,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+if os.getenv('DISABLE_PASSWORD_VALIDATORS') == 'true':
+    AUTH_PASSWORD_VALIDATORS = []
 
 
 # Internationalization

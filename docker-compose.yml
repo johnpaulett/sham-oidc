@@ -3,7 +3,7 @@ services:
   oidc:
     build: .
     ports:
-    - "4000:8000"
+      - "4000:8000"
     volumes:
       - .:/app
       - oidc-db:/data
@@ -11,6 +11,7 @@ services:
       # Set the SECRET_KEY enviroment variable on your host
       - SECRET_KEY=${SECRET_KEY}
       - DEBUG=${DEBUG:-false}
+      - DISABLE_PASSWORD_VALIDATORS=${DISABLE_PASSWORD_VALIDATORS:-false}
 
 volumes:
   oidc-db:

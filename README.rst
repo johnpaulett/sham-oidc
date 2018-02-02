@@ -24,10 +24,10 @@ variable.
 
    SECRET_KEY=<create a secret key>
 
-The ``.env`` file can take an optional to turn on ::
+There are several additional support environment variables::
 
    DEBUG=true
-
+   DISABLE_PASSWORD_VALIDATORS=true
 
 Run by Pulling the Image
 ------------------------
