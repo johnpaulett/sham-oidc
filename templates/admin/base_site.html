@@ -1,0 +1,13 @@
+{% extends "admin/base.html" %}
+
+{% block extrastyle %}
+  <style>
+   #header{ background-color: #0C4B33; border-bottom: solid 3px #000; }
+  </style>
+{% endblock %}
+
+{% block title %}{{ title }} | Sham OIDC Admin{% endblock %}
+
+{% block branding %}
+  <h1 id="site-name"><a href="{% url 'admin:index' %}">Sham OIDC Admin</a></h1>
+{% endblock %}
