@@ -3,7 +3,7 @@ services:
   oidc:
     build: .
     ports:
-      - "4000:8000"
+      - "${HTTP_PORT:-4000}:8000"
     volumes:
       - .:/app
       - oidc-db:/data
