@@ -94,6 +94,12 @@ AUTH_PASSWORD_VALIDATORS = [
 if os.getenv('DISABLE_PASSWORD_VALIDATORS') == 'true':
     AUTH_PASSWORD_VALIDATORS = []
 
+CSRF_COOKIE_HTTPONLY = True
+
+SESSION_COOKIE_AGE = 1800  # age in seconds (1800 = 30 minutes)
+SESSION_COOKIE_HTTPONLY = True
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
