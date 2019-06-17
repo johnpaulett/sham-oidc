@@ -9,7 +9,7 @@ The container can be run by pulling the `johnpaulett/sham-oidc
 out the git repository and using the included docker-compose.yml.
 
 Utilizes `django-oidc-provider <https://django-oidc-provider.readthedocs.io>`_,
-providing a simply containerized wrapper with the minimal set of
+providing a simple containerized wrapper with the minimal set of
 templates and configuration to quickly get started.
 
 sham-oidc is **not** intended for production or public usage.
