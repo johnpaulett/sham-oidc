@@ -10,6 +10,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG') == 'true'
 
+CSRF_COOKIE_NAME = 'oidc-csrftoken'
+
 # TODO Restrict to approriate hosts
 ALLOWED_HOSTS = [
     '*',

@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM --platform=$BUILDPLATFORM python:3.7-slim
 
 LABEL maintainer="john@paulett.org"
 
